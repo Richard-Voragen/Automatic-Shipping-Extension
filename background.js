@@ -1,11 +1,24 @@
-chrome.runtime.onInstalled.addListener(() => {
+let cities = [];
+ 
+chrome.runtime.onInstalled.addListener(async () => {
     console.log('Autofiller Extension Installed');
+    await fetch('./assets/cities.csv')
+      .then(response => {
+        return response.text();
+      })
+      .then(text => {
+        cities = text.split('\r\n');
+      })
   });
  
 let responseData = null;
  
 chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
+      if (request.action === "getCityList") {
+        sendResponse(cities);
+      }
+ 
       if (request.action === "scrapeData") {
         // Send a call to the active tab to find data
         chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
@@ -22,6 +35,7 @@ chrome.runtime.onMessage.addListener(
         chrome.tabs.create({ url: "https://tms.tranzact.com/Pages/Shipments/Parcel_Add" });
       }
  
+      // Calls content to print the shipping data
       if (request.action === "printData") {
         // Send a call to the active tab to print data
         chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
@@ -62,6 +76,52 @@ chrome.runtime.onMessage.addListener(
         });
  
         console.log("Printed Location Data");
+      }
+ 
+      if (request.action === "lookupPerson") {
+        chrome.tabs.create({ url: "https://adlookup.sutterhealth.org/?auto" });
+      }
+ 
+      if (request.action === "printLookupData") {
+        chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+          let data = {
+            email: "",
+            first_name: "",
+            last_name: ""
+          };
+ 
+          if (responseData) {
+            data.email = responseData.worker.worker_email;
+            data.first_name = responseData.worker.worker_first_name;
+            data.last_name = responseData.worker.worker_last_name;
+          }
+ 
+          chrome.tabs.sendMessage(tabs[0].id, { action: 'printLookupData', data: data });
+        });
+      }
+ 
+      if (request.action === "createForm") {
+        chrome.tabs.create({ url: "https://form.asana.com/?k=EEfalg4YOs24mCOhxzkk3A&d=15743239826254" });
+      }
+ 
+      if (request.action === "printFormData") {
+        chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+          let data = {
+            ticket_number: "",
+            ticket_url: "",
+            ticket_assignment: "",
+            ticket_comment: "",
+          };
+ 
+          if (responseData) {
+            data.ticket_number = responseData.ticket.ticket_number;
+            data.ticket_url = responseData.ticket.ticket_url;
+            data.ticket_assignment = responseData.ticket.ticket_assignment;
+            data.ticket_comment = responseData.ticket.ticket_comment;
+          }
+ 
+          chrome.tabs.sendMessage(tabs[0].id, { action: 'printFormData', data: data });
+        });
       }
     }
   );

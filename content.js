@@ -1,11 +1,22 @@
-const CONTACT_NAME = "Derek Shannon";
-const CONTACT_PHONE = "9163909209";
+const CONTACT_NAME = "Richard Voragen";
+const CONTACT_PHONE = "7149449113";
 const PACK_DESCRIPTION = "Pack";
 const PACK_SIZES = [ 12.5, 9.5, 0.1, 2.0 ];
  
 console.log('Content injected')
-const city_list = ["Adelanto","Agoura Hills","Alameda","Albany","Alhambra","Alturas","Amador City","Anaheim","Anderson","Angels","Antioch","Apple Valley","Arcadia","Arcata","Arroyo Grande","Artesia","Arvin","Atascadero","Atherton","Atwater","Auburn","Avalon","Avenal","Azusa","Bakersfield","Baldwin Park","Banning","Barstow","Beaumont","Bell","Bell Gardens","Bellflower","Belmont","Belvedere","Benicia","Berkeley","Beverly Hills","Big Bear Lake","Biggs","Bishop","Blue Lake","Blythe","Bradbury","Brawley","Brea","Brentwood","Brisbane","Buena Park","Burbank","Burlingame","Calexico","California City","Calipatria","Calistoga","Camarillo","Campbell","Capitola","Carlsbad","Carmel-By-The-Sea","Carpinteria","Carson","Cathedral City","Ceres","Cerritos","Chico","Chino","Chowchilla","Chula Vista","Claremont","Clayton","Cloverdale","Clovis","Coachella","Coalinga","Colfax","Colma","Colton","Colusa","Commerce","Compton","Concord","Corcoran","Corning","Corona","Coronado","Corte Madera","Costa Mesa","Cotati","Covina","Crescent City","Cudahy","Culver City","Cupertino","Cypress","Daly City","Dana Point","Danville","Davis","Del Mar","Del Rey Oaks","Delano","Desert Hot Springs","Diamond Bar","Dinuba","Dixon","Dorris","Dos Palos","Downey","Duarte","Dublin","Dunsmuir","East Palo Alto","El Cajon","El Centro","El Cerrito","El Monte","El Segundo","Elk Grove","Emeryville","Encinitas","Escalon","Escondido","Etna","Eureka","Exeter","Fairfax","Fairfield","Farmersville","Ferndale","Fillmore","Firebaugh","Folsom","Fontana","Fort Bragg","Fort Jones","Fortuna","Foster City","Fountain Valley","Fowler","Fremont","Fresno","Fullerton","Galt","Garden Grove","Gardena","Gilroy","Glendale","Glendora","Gonzales","Grand Terrace","Grass Valley","Greenfield","Gridley","Grover Beach","Guadalupe","Gustine","Half Moon Bay","Hanford","Hawaiian Gardens","Hawthorne","Hayward","Healdsburg","Hemet","Hercules","Hermosa Beach","Hesperia","Hidden Hills","Highland","Hillsborough","Hollister","Holtville","Hughson","Huntington Beach","Huntington Park","Huron","Imperial","Imperial Beach","Indian Wells","Indio","Industry","Inglewood","Ione","Irvine","Irwindale","Isleton","Jackson","Kerman","King City","Kingsburg","La Cañada Flintridge","La Habra","La Habra Heights","La Mesa","La Mirada","La Palma","La Puente","La Quinta","La Verne","Lafayette","Laguna Beach","Laguna Niguel","Lake Elsinore","Lakeport","Lakewood","Lancaster","Larkspur","Lathrop","Lawndale","Lemon Grove","Lemoore","Lincoln","Lindsay","Live Oak","Livermore","Livingston","Lodi","Loma Linda","Lomita","Lompoc","Long Beach","Loomis","Los Alamitos","Los Altos","Los Altos Hills","Los Angeles","Los Banos","Los Gatos","Loyalton","Lynwood","Madera","Mammoth Lakes","Manhattan Beach","Manteca","Maricopa","Marina","Martinez","Marysville","Maywood","McFarland","Mendota","Menlo Park","Merced","Mill Valley","Millbrae","Milpitas","Mission Viejo","Modesto","Monrovia","Montague","Montclair","Monte Sereno","Montebello","Monterey","Monterey Park","Moorpark","Moraga","Moreno Valley","Morgan Hill","Morro Bay","Mount Shasta","Mountain View","Napa","National City","Needles","Nevada City","Newark","Newman","Newport Beach","Norco","Norwalk","Novato","Oakdale","Oakland","Oceanside","Ojai","Ontario","Orange","Orange Cove","Orinda","Orland","Oroville","Oxnard","Pacific Grove","Pacifica","Palm Desert","Palm Springs","Palmdale","Palo Alto","Palos Verdes Estates","Paradise","Paramount","Parlier","Pasadena","Paso Robles","Patterson","Perris","Petaluma","Pico Rivera","Piedmont","Pinole","Pismo Beach","Pittsburg","Placentia","Placerville","Pleasant Hill","Pleasanton","Plymouth","Point Arena","Pomona","Port Hueneme","Porterville","Portola","Portola Valley","Poway","Rancho Cucamonga","Rancho Mirage","Rancho Palos Verdes","Red Bluff","Redding","Redlands","Redondo Beach","Redwood City","Reedley","Rialto","Richmond","Ridgecrest","Rio Dell","Rio Vista","Ripon","Riverbank","Riverside","Rocklin","Rohnert Park","Rolling Hills","Rolling Hills Estates","Rosemead","Roseville","Ross","Sacramento","Salinas","San Anselmo","San Bernardino","San Bruno","San Carlos","San Clemente","San Diego","San Dimas","San Fernando","San Francisco","San Gabriel","San Jacinto","San Joaquin","San Jose","San Juan Bautista","San Juan Capistrano","San Leandro","San Luis Obispo","San Marcos","San Marino","San Mateo","San Pablo","San Rafael","San Ramon","Sand City","Sanger","Santa Ana","Santa Barbara","Santa Clara","Santa Clarita","Santa Cruz","Santa Fe Springs","Santa Maria","Santa Monica","Santa Paula","Santa Rosa","Santee","Saratoga","Sausalito","Scotts Valley","Seal Beach","Seaside","Sebastopol","Selma","Shafter","Sierra Madre","Signal Hill","Simi Valley","Solana Beach","Soledad","Solvang","Sonoma","Sonora","South El Monte","South Gate","South Lake Tahoe","South Pasadena","South San Francisco","St. Helena","Stanton","Stockton","Suisun City","Sunnyvale","Susanville","Sutter Creek","Taft","Tehachapi","Tehama","Temecula","Temple City","Thousand Oaks","Tiburon","Torrance","Tracy","Trinidad","Tulare","Tulelake","Turlock","Tustin","Twentynine Palms","Ukiah","Union City","Upland","Vacaville","Vallejo","Ventura","Vernon","Victorville","Villa Park","Visalia","Vista","Walnut","Walnut Creek","Wasco","Waterford","Watsonville","Weed","West Covina","West Hollywood","West Sacramento","Westlake Village","Westminster","Westmorland","Wheatland","Whittier","Williams","Willits","Willows","Winters","Woodlake","Woodland","Woodside","Yorba Linda","Yountville","Yreka","Yuba City","Yucaipa"];
+let city_list = [];
+chrome.runtime.sendMessage({action: "getCityList"}, (response) => {
+    if (response) {
+      city_list = response;
+    }
+});
  
+let ticket = {
+    ticket_number: "null",
+    ticket_url: "null",
+    ticket_assignment: "null",
+    ticket_comment: "null"
+}
 let worker = {
     worker_location: "null",
     worker_first_name: "null",
@@ -21,6 +32,7 @@ let requester = {
     requester_location: "null"
 }
 let scrapedData = {
+    ticket,
     worker,
     requester
 };
@@ -32,11 +44,19 @@ if (document.URL.includes("sc_task.do?")) {
 } else if (document.URL.includes("tranzact.com/Pages/Shipments/Parcel_Add")) {
     setTimeout(() => {
         chrome.runtime.sendMessage({action: "printData"});
-    }, 3000);
+    }, 3200);
 } else if (document.URL.includes("tranzact.com/Pages/Location_Add")) {
     setTimeout(() => {
         chrome.runtime.sendMessage({action: "printLocationData"});
-    }, 6000);
+    }, 500);
+} else if (document.URL.includes("adlookup.sutterhealth.org/?auto")) {
+    setTimeout(() => {
+        chrome.runtime.sendMessage({action: "printLookupData"});
+    }, 1000);
+} else if (document.URL.includes("form.asana.com/?k=EEfalg4YOs24mCOhxzkk3A&d=15743239826254")) {
+    setTimeout(() => {
+        chrome.runtime.sendMessage({action: "printFormData"});
+    }, 1000);
 }
  
 // Example of extracting data from a page
@@ -44,10 +64,12 @@ function listener() {
     // Send the scraped data to the background script or popup
     chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         if (message.action === 'scrapeData' && document.URL.includes("sc_task.do?")) {
+            getTicketData();
             getWorkerData();
             getRequesterData();
  
             scrapedData = {
+                ticket,
                 worker,
                 requester
             };
@@ -67,17 +89,47 @@ function listener() {
                 printLocationData(message.data);
             }
         }
+ 
+        //This is the printdata function for the active directory page
+        if (message.action === 'printLookupData') {
+            if (document.URL.includes("adlookup.sutterhealth.org")) {
+                printLookupData(message.data);
+            }
+        }
+ 
+        // This is the printdata function for asana form
+        if (message.action === 'printFormData') {
+            if (document.URL.includes("form.asana.com/")) {
+                printFormData(message.data);
+            }
+        }
     });
+}
+ 
+// Scrapes the ticket data
+function getTicketData() {
+    //console.log(document.getElementById("sys_readonly.sc_task.number").value);
+    const ticket_number = document.getElementById("sys_readonly.sc_task.number").value;
+    const ticket_url = document.URL;
+    const ticket_assignment = document.getElementById("sys_display.sc_task.assigned_to").value;
+    const ticket_comment = generateComment(document.getElementsByClassName("tdwrap")[0].innerText, ticket_assignment);
+ 
+    ticket = {
+        ticket_number,
+        ticket_url,
+        ticket_assignment,
+        ticket_comment
+    }
 }
  
 // Scrapes the worker data
 function getWorkerData() {
-    //console.log(document.getElementsByClassName("questionsetreference form-control element_reference_input disabled readonly"));
+    console.log(document.getElementsByClassName("tdwrap")[0].innerText);
     const worker_list_info = document.getElementsByClassName("cat_item_option sc-content-pad form-control");
  
     const worker_first_name = worker_list_info[0].value ? worker_list_info[0].value.trim() : "";
     const worker_last_name = worker_list_info[1].value ? worker_list_info[1].value.trim() : "";
-    const worker_email = "";
+    let worker_email = "";
     try {
         worker_email = document.getElementsByClassName("questionsetreference form-control element_reference_input disabled readonly")[0].value.split(" ")[2].slice(1, -1);
     } catch (error) {}
@@ -115,7 +167,8 @@ function getRequesterData() {
 }
  
 function printParcelData(data) {
-    console.log(document.getElementsByClassName("form-control input-sm controlldCustom controlAdd"));
+    //console.log(document.getElementsByClassName("pickDrop stopLocationSelect col-sm-4"));
+    console.log(document.getElementById("tblAll"));
     //locations
     document.getElementsByClassName("form-control input-sm ui-autocomplete-input autocomplete-location")[0].value = CONTACT_NAME;
     document.getElementsByClassName("form-control input-sm ui-autocomplete-input autocomplete-location")[1].value = data.request_location;
@@ -129,16 +182,10 @@ function printParcelData(data) {
  
     // description
     document.getElementsByClassName("txtStopLineData lineControlEdit form-control input-excel input-sm form-control ui-autocomplete-input autocomplete-commodity input-sm txtStopCommodityDescription txtCommodityDescription")[0].value = PACK_DESCRIPTION;
+   
     // Dropdowns
     document.getElementsByClassName("form-control input-sm controlldCustom controlAdd")[0].selectedIndex = 1;
     document.getElementById("ddPickupType").selectedIndex = 1;
-    /* document.getElementsByClassName("form-control input-sm controlldCustom controlAdd")[0].querySelectorAll("option").forEach(el => {
-        console.log(el.textContent);
-        if (el.textContent === "185-269118400-69045 (SUTTER MEDICAL FOUNDATION)") {
-            el.click();
-            console.log("RAN");
-        }
-    }); */
    
     // check boxes
     let checks = document.getElementsByClassName("controlldCustomChk")
@@ -150,10 +197,34 @@ function printParcelData(data) {
     for (let i = 0; i < sizes.length; i++) {
         sizes[i].value = PACK_SIZES[i];
     }
+ 
+    const destination = document.getElementsByClassName("pickDrop stopLocationSelect col-sm-4")[1];
+    const interval = setInterval(() => {
+        if (destination.style.display === "none") {
+            // Dropdowns
+            document.getElementById("chk0461").click();
+            document.getElementById("chk0611").click();
+ 
+            clearInterval(interval);
+        }
+    }, 1000)
+ 
+    const interval2 = setInterval(() => {
+        const shipping_values = document.getElementById("tblAll");
+        if (shipping_values != null) {
+            const idVal = shipping_values.tBodies[0].querySelectorAll('tr')[4].querySelectorAll('td')[0].innerText;
+            document.getElementById("UPSN-" + idVal).click();
+ 
+            setTimeout(() => {
+                document.getElementById("ddParcelTenderAccountNum").selectedIndex = 1;
+            }, 200);
+ 
+            clearInterval(interval2);
+        }
+    }, 1000)
 }
  
 function printLocationData(data) {
-    console.log(data);
     //console.log(document.getElementsByClassName("form-control input-sm ui-autocomplete-input autocomplete-location"));
     // Location Name
     document.getElementById("txtLocationName").value = data.location_name;
@@ -166,21 +237,75 @@ function printLocationData(data) {
     document.getElementById("txtCity").value = data.location.city;
     // Validate Button
     document.getElementById("chkDoValidate").click();
-    // Dropdowns
-    document.getElementById("ddLocationType").selectedIndex = 5;
-    document.getElementById("ddState").selectedIndex = 5;
-    document.getElementById("ddTimeZone").selectedIndex = 4;
+ 
+    const dropdowns = [
+        document.getElementById("ddState"),
+        document.getElementById("ddTimeZone"),
+        document.getElementById("ddLocationType")
+    ];
+    const interval = setInterval(() => {
+        if (dropdowns.every(dropdown => dropdown.value === "-1")) {
+            // Dropdowns
+            document.getElementById("ddLocationType").selectedIndex = 5;
+            document.getElementById("ddState").selectedIndex = 5;
+            document.getElementById("ddTimeZone").selectedIndex = 4;
+ 
+            // Dock Hours
+            document.getElementById("btnSetDockHours").click();
+            document.getElementById("ddAddHoursStart").selectedIndex = 28;
+            document.getElementById("ddAddHoursEnd").selectedIndex = 68;
+            document.getElementById("btnAddHoursConfirm").click();
+ 
+            clearInterval(interval);
+        }
+    }, 250)
+}
+ 
+function printLookupData(data) {
+    if (data.email === "") {
+        document.getElementById("TextBoxFN").value = data.first_name;
+        document.getElementById("TextBoxLN").value = data.last_name;
+ 
+        document.getElementById("ButtonGetFL").click();
+    } else {
+        document.getElementById("TextBox1").value = data.email;
+ 
+        document.getElementById("Button1").click();
+    }
+}
+ 
+function printFormData(data) {
+    const inputEvent = new Event('input', { bubbles: true });
+    const changeEvent = new Event('change', { bubbles: true });
+ 
+    let textbox = document.getElementById("1209254768244365");
+    textbox.value = data.ticket_number;
+    textbox.dispatchEvent(inputEvent);
+    textbox.dispatchEvent(changeEvent);
+ 
+    textbox = document.getElementById("1209254768244367");
+    textbox.value = data.ticket_assignment;
+    textbox.dispatchEvent(inputEvent);
+    textbox.dispatchEvent(changeEvent);
+ 
+    textbox = document.getElementById("1209254768244369");
+    textbox.value = data.ticket_url;
+    textbox.dispatchEvent(inputEvent);
+    textbox.dispatchEvent(changeEvent);
+ 
+    textbox = document.getElementById("1209254768244375");
+    textbox.value = data.ticket_comment;
+    textbox.dispatchEvent(inputEvent);
+    textbox.dispatchEvent(changeEvent);
 }
  
 function parseAddress(address) {
-    const parts = address.split(/[,/]/);
- 
     let addressL1 = "";
     let addressL2 = "";
     let city = "";
     let zip = "";
  
-    const index = city_list.findIndex(item => address.includes(item));
+    const index = city_list.findLastIndex(item => address.toLowerCase().includes(item.toLowerCase()));
     if (index != -1) city = city_list[index].trim();
  
     if (city) addressL1 = address.substring(address.search(/\d{3,5}/), address.search(city)).replace(/^[,\s]+|[,\s]+$/g, "");
@@ -201,4 +326,14 @@ function parseAddress(address) {
         city,
         zip
     }
+}
+ 
+function generateComment(date, ticket_assignment) {
+    splitDate = date.split(' ');
+ 
+    if (date.includes(ticket_assignment)) {
+        return "Last contact made with customer on ServiceNow was on " + splitDate[0];
+    }
+ 
+    return "Customer contacted us on " + splitDate[0];
 }
